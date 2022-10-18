@@ -14,6 +14,8 @@ except FileNotFoundError:
     print("Falha ao criar o arquivo!")
 except ValueError:
     print("Falha ao escolher o modo de leitura/escrita")
+else:
+    print('Escrita ocorreu bem!')
 
 try:
     with open("literalmente_eu.txt", mode="r") as file:
@@ -21,3 +23,8 @@ try:
             print(line)
 except FileNotFoundError:
     print("Falha ao tentar ler o arquivo! inexistente/não encontrado")
+else:
+    print("Leitura ocorreu com sucesso!")
+
+finally:
+    print("Programa finalizado.")
