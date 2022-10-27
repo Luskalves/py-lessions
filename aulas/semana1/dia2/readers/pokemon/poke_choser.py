@@ -12,7 +12,6 @@ def type_fillter(type):
     type_list = [
         pokemon["name"] for pokemon in pokemons if type in pokemon["type"]
     ]
-
     return type_list
 
 def time_chooser(pokemons_name):
@@ -22,7 +21,6 @@ def time_chooser(pokemons_name):
             time_choesed.append(pokemons_name[index])
             indexes.append(index)
 
-
 type_pokemon = input("Digite o tipo dos pokemons: ")
 
 is_valid = False
@@ -31,11 +29,6 @@ for pokemon in pokemons:
         is_valid = True
     if (is_valid):
         break
-
-def filtro(list):
-    for p in list:
-        if (p == 'Blastoise'):
-            print('achou')
 
 if (is_valid):
     pokemon_list = type_fillter(type_pokemon)
